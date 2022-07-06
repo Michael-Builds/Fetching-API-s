@@ -1,0 +1,48 @@
+.container{
+    display: flex;
+}
+.user{
+    /* margin: 10px */
+    margin-left: 40px;
+    padding: 20px;
+    align-items: center;
+    justify-content: center;
+    display: block;
+ }
+
+.user img{
+    border: 1px  dotted black;
+    border-radius: 50px;
+    height: 100px;
+    width: 100px;
+}
+
+.user h2{
+    color: blue;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.user .email a{
+    text-decoration: none;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.user .email a:hover{
+    color: black;
+}
+
+.user .me{
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    margin-left: 35px;
+    color: Red;
+
+}
+
+.user #you{
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    margin-left: 35px;
+}

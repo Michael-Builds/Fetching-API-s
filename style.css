@@ -1,0 +1,159 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    /* background: #10CDC8; */
+    background: linear-gradient(139deg,#0b1d1c 0%, rgba(107, 209, 206,1)100%)no-repeat center center/cover;
+
+    overflow-x: hidden;
+    background-attachment: fixed;
+    height: 100%;
+
+}
+
+#todos{
+    color: #fff;
+    padding: 20px;
+    width: 600px;
+    margin: 0 auto;
+    height: auto;
+}
+#todos > .title{
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+#todos > .title h1{
+    display: block;
+    position: relative;
+    text-transform: uppercase;
+    font-size: 2.5rem;
+}
+
+#todos > .title h1::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    bottom: 0;
+    width: 10%;
+    height: 2px;
+    background-color: #fff;
+    transition: .5s;
+}
+
+
+#todos > .title h1:hover::before{
+    width: 50%;
+}
+
+#todos > .todo-container {
+    width: 100%;
+    text-align: center;
+    position: relative;
+    margin-bottom: 50px;
+}
+
+#todos > .todo-container >.todo-input{
+    width: 100%;
+    height: 40px;
+    padding: 0 0 0 10px;
+    font-size: 1.2rem;
+    outline: none;
+    border:none;
+}
+
+#todos > .todo-container > .add-item{
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 40px;
+    height: 40px;
+    background-color: #0b1d1c;
+    line-height: 40px;
+    cursor: pointer;
+
+}
+
+#todos > .todo-container > .add-item:nth-child(2){
+    right: 42px;
+background-color: #0b1d1c;
+    
+}
+/* we are going to create this classes in js */
+#todos > .todo-list-container{
+    list-style: none;
+    margin: 10px 0 0;
+}
+#todos > .todo-list-container .todo-list{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    overflow: hidden;
+}
+
+#todos > .todo-list-container .todo-list .todo-item{
+    width:100%;
+    background: #fff;
+    color: #0b1d1c;
+    height: 40px;
+    line-height: 40px;
+    padding: 0 10px;
+    cursor: pointer;
+
+}
+
+#todos > .todo-list-container .todo-list .button{
+    position: absolute;
+    right: 0;
+}
+
+#todos > .todo-list-container .todo-list .button button{
+    width: 40px;
+    height: 50px;
+    border:none;
+    color:#fff;
+    outline: none;
+    cursor: pointer;
+}
+#todos > .todo-list-container .todo-list .button button i{
+    pointer-events: none;
+}
+
+/* buttons */
+
+#todos > .todo-list-container .todo-list .button .completed{
+    background:#3ecc82;
+}
+
+#todos > .todo-list-container .todo-list .button .trash{
+    background: #e72727;
+}
+
+.fall{
+    opacity: 0 !important;
+    transform: translateY(30px);
+    transition: .5s;
+}
+
+.line_through{
+    text-decoration: line-through;
+    opacity: 0.7;
+    transition: .3s;
+}
+
+.editBtn{
+    background: #563ec1;
+}
+
+@media screen and (max-width:600px){
+    #todos{
+        width: 100%;
+    }
+}

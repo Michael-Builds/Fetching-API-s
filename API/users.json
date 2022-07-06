@@ -1,0 +1,22 @@
+[
+    {
+        "username" : "John",
+        "firstName" : "John",
+        "lastName" : "Doe",
+        "gender" : "Male",
+        "profession" :"Doctor",
+        "age" :"24",
+        "profilePic" : "image/Man.png",
+        "email" : "john.doe@example.com"
+    },
+    {
+        "username" : "Mike",
+        "firstName" : "Mike",
+        "lastName" : "Jango",
+        "gender" : "Male",
+        "profession" :"Nurse",
+        "age" :"29",
+        "profilePic" : "image/Woman.png",
+        "email" : "jango.mike@example.com"
+    }
+]
